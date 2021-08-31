@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../objectConstructors/style.css">
+    <script defer src="../objectConstructors/index.js"></script>
+</head>
+<body>
+    <header class="title">
+        <h1>My Library</h1>
+        <button class="button_add-book">New Book</button>
+    </header>
+    <div class="bookshelf">
+
+    </div>
+    <div class="modal hidden" id="modal">
+        <form class="form_add-book">
+            <div>
+                <h2>Add a New Book</h2>
+                <button class="button_close-button">&times;</button>
+            </div>
+            <div class="input_book-info">
+                <label class="label-input" for="bookTitle">Book Title:</label>
+                <input class ="input_book-title" id="bookTitle" type="text" required>
+            </div>
+            <div class="input_book-info">
+                <label class="label-input" for="bookAuthor">Book Author:</label>
+                <input class ="input_book-author" id="bookAuthor" type="text" required>
+            </div>
+            <div class="input_book-info">
+                <label class="label-input" for="bookTitle">Book Pages:</label>
+                <input class ="input_book-page" id="bookPages" type="number" required>
+            </div>
+            <div class="input_book-info">
+                <label class="label-input" for="bookRead">Read</label>
+                <input name="bookRead" type="radio" id="bookRead" value="true">
+                <label class="label-input" for="bookNotRead">Not Read</label>
+                <input name="bookRead" type="radio" id="bookNotRead" value="false">
+            </div>
+            <button class="submitBook">Add Book</button>
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
+</body>
+</html>
