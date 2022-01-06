@@ -1,136 +1,147 @@
-
 body {
-    background: url('https://images.unsplash.com/photo-1596123068611-c89d922a0f0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1022&q=80');
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+  background: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    background: #f9f9f9;
+  background: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: scale-down;
+  color: whitesmoke;
 }
 
-.title h1 {
-    margin: 10px;
-}
-
-
+/* .title h1 {
+  margin: 10px;
+} */
 
 .bookshelf {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-    box-sizing: border-box;
-    /* justify-content: space-around; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  box-sizing: border-box;
+  /* justify-content: space-around; */
 }
 
 .book {
-    /* background-color:blueviolet; */
-    background: url('https://static7.depositphotos.com/1040166/795/i/950/depositphotos_7957363-stock-photo-texture-of-old-paper.jpg');
-    position: relative;
-    min-width: 250px;
-    width: 20%;
-    margin: 15px;
-    height: 35vh;
-    margin: 30px;
-    font-size: 1.5rem;
-    overflow: hidden;
-    /* box-sizing: border-box; */
+  /* background-color:blueviolet; */
+  background: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/blank-parchment-page-o1-historic-illustrations.jpg");
+  background-size: 100%;
+  position: relative;
+  min-width: 250px;
+  width: 20%;
+  margin: 15px;
+  height: 50vh;
+  margin: 30px;
+  font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .book h2 {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-
 .modal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: #ccc;
-    padding: 20px;
-    height: 50vh;
-    width: 40vh;
-    border-radius: 20px;
-    z-index: 10;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ccc;
+  padding: 20px;
+  height: 50vh;
+  width: 40vh;
+  border-radius: 20px;
+  z-index: 10;
 }
 
 .label-input {
-    display: flex;
+  display: flex;
+}
+
+.input_book-info.readButtons {
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+}
+
+.yes-select,
+.no-select {
+  display: flex;
 }
 
 .form_add-book {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .button_add-book {
-    margin: 15px;
-    background: white;
+  background: #dddddd;
+  border: 0.25rem;
+  margin-bottom: 10px;
 }
 
 .button_close-button {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    outline: none;
-    font-weight: bold;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  outline: none;
+  font-weight: bold;
 }
 
 .book_information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+  text-align: center;
 }
 
 .button_switch-read {
-    width: 80%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .button_delete-book {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
 }
 
 .book_information h2 {
-    margin: 10px 0 0 0; 
+  margin: 10px 0 0 0;
 }
 
 .overlay {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.5);
-    height: 100vh;
-    width: 100vw;
-    border-radius: 20px;
-    z-index: 5;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  border-radius: 20px;
+  z-index: 5;
 }
-
-
 
 .hidden {
-    display: none;
+  display: none;
 }
 
+.modal_header {
+  margin-top: 10px;
+}
